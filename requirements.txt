@@ -4,3 +4,8 @@ python-dotenv
 pytest
 python-dateutil
 sqlalchemy
+langchain-openai
+faiss-cpu
+langchain
+langchain-community
+langchain-core
