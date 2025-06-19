@@ -9,3 +9,5 @@ faiss-cpu
 langchain
 langchain-community
 langchain-core
+twilio
+flask
