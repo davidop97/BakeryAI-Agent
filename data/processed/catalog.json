@@ -1,0 +1,32 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Pan Integral",
+      "precio": 5000,
+      "categoria": "Panes",
+      "descripcion": "Pan artesanal hecho con harina integral, ideal para desayunos."
+    },
+    {
+      "id": "2",
+      "nombre": "Torta de Chocolate",
+      "precio": 25000,
+      "categoria": "Postres",
+      "descripcion": "Torta húmeda de chocolate con relleno de ganache."
+    },
+    {
+      "id": "3",
+      "nombre": "Croissant",
+      "precio": 3000,
+      "categoria": "Panes",
+      "descripcion": "Croissant crujiente y mantecoso, recién horneado."
+    },
+    {
+      "id": "4",
+      "nombre": "Galletas de Avena",
+      "precio": 2000,
+      "categoria": "Postres",
+      "descripcion": "Galletas saludables de avena y miel."
+    }
+  ]
+}
