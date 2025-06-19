@@ -6,59 +6,59 @@
     },
     {
       "pregunta": "¿Tienen opciones sin gluten?",
-      "respuesta": "Sí, ofrecemos panes y pasteles sin gluten. Consulta nuestro menú o contáctanos para más detalles."
+      "respuesta": "Sí, ofrecemos panes y pasteles sin gluten. Consulta nuestro menú para más detalles."
     },
     {
-      "pregunta": "¿Tienen productos veganos?",
-      "respuesta": "Sí, contamos con varias opciones veganas, como panes integrales y algunos postres. Pregunta por el menú vegano."
+      "pregunta": "¿Hacen domicilios?",
+      "respuesta": "Sí, ofrecemos servicio de domicilio en un radio de 5 km por un costo adicional de $5000."
     },
     {
-      "pregunta": "¿Cuánto tiempo tarda un domicilio?",
-      "respuesta": "Los domicilios suelen tardar entre 30 y 60 minutos, dependiendo de la ubicación y la demanda."
-    },
-    {
-      "pregunta": "¿Cuáles son los métodos de pago?",
-      "respuesta": "Aceptamos efectivo, tarjeta de crédito/débito, transferencias bancarias, y pagos por aplicaciones como Nequi y Daviplata."
+      "pregunta": "¿Aceptan pagos con tarjeta?",
+      "respuesta": "Sí, aceptamos tarjetas débito y crédito, además de efectivo y transferencias."
     },
     {
       "pregunta": "¿Puedo hacer un pedido personalizado?",
-      "respuesta": "Sí, ofrecemos pedidos personalizados como tortas para eventos. Contáctanos con al menos 24 horas de antelación."
+      "respuesta": "Claro, contáctanos con 48 horas de anticipación para pedidos personalizados."
     },
     {
-      "pregunta": "¿Tienen servicio de catering para eventos?",
-      "respuesta": "Sí, ofrecemos catering para eventos. Escríbenos para coordinar el menú y los detalles."
+      "pregunta": "¿Tienen café para llevar?",
+      "respuesta": "Sí, ofrecemos café recién preparado en vasos para llevar."
     },
     {
-      "pregunta": "¿Cuál es el costo de envío?",
-      "respuesta": "El costo de envío varía según la distancia, entre $5,000 y $15,000 COP. Te confirmaremos al hacer el pedido."
+      "pregunta": "¿Qué tipos de pan tienen?",
+      "respuesta": "Ofrecemos pan integral, baguette, ciabatta, y panes especiales como de centeno."
     },
     {
-      "pregunta": "¿Puedo recoger mi pedido en la tienda?",
-      "respuesta": "Sí, puedes hacer tu pedido y recogerlo en nuestra tienda durante el horario de atención."
+      "pregunta": "¿Los productos son frescos?",
+      "respuesta": "Todos nuestros productos son horneados diariamente con ingredientes frescos."
     },
     {
-      "pregunta": "¿Tienen promociones o descuentos?",
-      "respuesta": "Ofrecemos promociones semanales. Consulta nuestras redes sociales o contáctanos para conocer las ofertas actuales."
+      "pregunta": "¿Tienen postres veganos?",
+      "respuesta": "Sí, tenemos opciones veganas como galletas de avena y tortas sin lácteos."
     },
     {
-      "pregunta": "¿Cómo puedo ver el menú completo?",
-      "respuesta": "El menú está disponible en nuestra página web o puedes solicitárnoslo por WhatsApp o correo."
+      "pregunta": "¿Puedo reservar una mesa?",
+      "respuesta": "No ofrecemos reservas, pero tenemos espacio disponible para clientes."
     },
     {
-      "pregunta": "¿Hacen entregas fuera de la ciudad?",
-      "respuesta": "Por el momento, solo hacemos entregas dentro de la ciudad. Contáctanos para confirmar tu ubicación."
+      "pregunta": "¿Hacen tortas de cumpleaños?",
+      "respuesta": "Sí, hacemos tortas personalizadas para cumpleaños. Llámanos para detalles."
     },
     {
-      "pregunta": "¿Puedo cancelar un pedido?",
-      "respuesta": "Sí, puedes cancelar un pedido antes de que sea preparado. Escríbenos lo antes posible para procesar la cancelación."
+      "pregunta": "¿Tienen Wi-Fi gratis?",
+      "respuesta": "Sí, ofrecemos Wi-Fi gratuito para nuestros clientes."
     },
     {
-      "pregunta": "¿Qué hago si mi pedido llega incompleto?",
-      "respuesta": "Si tu pedido está incompleto, contáctanos inmediatamente por WhatsApp o correo y lo resolveremos."
+      "pregunta": "¿Qué bebidas ofrecen?",
+      "respuesta": "Ofrecemos café, té, jugos naturales, y refrescos."
     },
     {
-      "pregunta": "¿Tienen panes recién horneados todos los días?",
-      "respuesta": "Sí, horneamos pan fresco diariamente. Te recomendamos pedir temprano para garantizar disponibilidad."
+      "pregunta": "¿Tienen opciones para diabéticos?",
+      "respuesta": "Sí, tenemos postres sin azúcar añadido, como galletas y tortas especiales."
+    },
+    {
+      "pregunta": "¿Dónde están ubicados?",
+      "respuesta": "Estamos en Calle 123 #45-67, Bogotá, Colombia."
     }
   ]
 }
