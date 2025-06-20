@@ -1,6 +1,6 @@
 from flask import Flask, request
-from twilio.twiml.messaging_response import MessagingResponse
-from twilio.rest import Client
+from twilio.twiml.messaging_response import MessagingResponse # type: ignore
+from twilio.rest import Client # type: ignore
 from dotenv import load_dotenv
 import os
 from src.agent.agent_core import buscar_respuesta
@@ -26,7 +26,7 @@ def whatsapp_webhook():
     from_number = request.values.get("From", "")
 
     # Procesar consulta con el agente
-    response_text = buscar_respuesta(incoming_msg) or "Lo siento, no entendí tu mensaje."
+    response_text = buscar_respuesta(incoming_msg, from_number) or "Lo siento, no entendí tu mensaje."
 
     # Crear respuesta TwiML
     resp = MessagingResponse()

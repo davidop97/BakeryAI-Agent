@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import Optional, Tuple
 import os
 import json
 import re
@@ -40,7 +41,8 @@ def get_session_history(session_id: str) -> ChatMessageHistory:
         chat_histories[session_id] = ChatMessageHistory()
     return chat_histories[session_id]
 
-def extract_order_info(consulta: str) -> tuple[str | None, int | None]:
+
+def extract_order_info(consulta: str) -> Tuple[Optional[str], Optional[int]]:
     """
     Extrae el nombre del producto y la cantidad de una consulta de pedido.
     Soporta frases como "quiero 2 croissants", "dame una torta de chocolate", etc.
@@ -54,11 +56,11 @@ def extract_order_info(consulta: str) -> tuple[str | None, int | None]:
         return None, None
 
     # Extraer cantidad
-    quantity = 1
+    quantity: int = 1
     quantity_match = re.search(r"\b(\d+|un|una|dos|tres|cuatro|cinco|media|mitad)\b", consulta.lower())
     if quantity_match:
         num_str = quantity_match.group(1)
-        num_map = {"un": 1, "una": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "media": 0.5, "mitad": 0.5}
+        num_map = {"un": 1, "una": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5}
         if num_str in num_map:
             quantity = num_map[num_str]
         elif num_str.isdigit():
@@ -72,7 +74,7 @@ def extract_order_info(consulta: str) -> tuple[str | None, int | None]:
     texto = re.sub(order_keywords, "", texto)
     texto = re.sub(r"\b(\d+|un|una|dos|tres|cuatro|cinco|media|mitad)\b", "", texto)
     texto = re.sub(r"\b(de|el|la|los|las|un|una|y|por|para|a)\b", "", texto)
-    product_name = texto.strip(" .," )
+    product_name: Optional[str] = texto.strip(" .," )
 
     # Si el resultado es vacío, no se detectó producto
     if not product_name or len(product_name) < 3:
@@ -115,7 +117,7 @@ def validate_product(product_name: str, vectordb) -> dict | None:
     logging.debug("Producto no encontrado en catálogo ni vector store")
     return None
 
-def buscar_respuesta(consulta: str, session_id: str = None) -> str | None:
+def buscar_respuesta(consulta: str, session_id: Optional[str] = None) -> str | None:
     """
     Procesa la consulta: primero intenta con pedidos/productos, luego FAQs, y finalmente el LLM con historial si aplica.
 
@@ -164,7 +166,7 @@ def buscar_respuesta(consulta: str, session_id: str = None) -> str | None:
         producto = validate_product(product_name, vectordb)
         if producto:
             # Guardar pedido en orders.db
-            order_id = db_manager.add_order(product_id=producto["id"], quantity=quantity)
+            order_id = db_manager.add_order(product_id=producto["id"], quantity=quantity, status="procesado")
             response = f"Pedido registrado: {quantity} x {producto['nombre']} por ${producto['precio'] * quantity}. ID del pedido: {order_id}."
             logging.info(f"Pedido registrado: {response}")
             db_manager.add_interaction(consulta, response)
